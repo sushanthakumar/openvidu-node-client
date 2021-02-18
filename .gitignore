@@ -42,9 +42,6 @@ testem.log
 Thumbs.db
 *.editorconfig
 
-/lib/
-
 docs/
-lib/
 
 *.tgz
