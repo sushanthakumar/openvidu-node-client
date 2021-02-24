@@ -153,7 +153,8 @@ export class Session {
                 rtspUri: (!!connectionProperties && !!connectionProperties.rtspUri) ? connectionProperties.rtspUri : null,
                 adaptativeBitrate: !!connectionProperties ? connectionProperties.adaptativeBitrate : null,
                 onlyPlayWithSubscribers: !!connectionProperties ? connectionProperties.onlyPlayWithSubscribers : null,
-                networkCache: (!!connectionProperties && (connectionProperties.networkCache != null)) ? connectionProperties.networkCache : null
+                networkCache: (!!connectionProperties && (connectionProperties.networkCache != null)) ? connectionProperties.networkCache : null,
+                port: (!!connectionProperties && !!connectionProperties.port) ? connectionProperties.port : null,
             });
             axios.post(
                 this.ov.host + OpenVidu.API_SESSIONS + '/' + this.sessionId + '/connection',

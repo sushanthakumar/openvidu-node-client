@@ -127,4 +127,9 @@ export interface ConnectionProperties {
      */
     networkCache?: number;
 
+    /**
+     * Port through which kurento modules stream the feed.
+     */
+    port?: number;
+
 }
